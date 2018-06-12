@@ -1,8 +1,24 @@
+/**
+ * @filename: Dept.java
+ * @desc 员工实体类
+ * @author: Wang Chinda
+ * @blog http://www.cnblogs.com/goodcheap
+ * @date: 2018-06-12 11:30
+ * @version: v1.0
+ * @copyright: Copyright © 2018 ༄ྂ祸ྂྂ害ོ༘苍ྂྂ生ོ༘࿐ྂ 版权所有
+ * @modify_history: -
+ * 20180612   Wang Chinda   create
+ * 20180612   Wang Chinda   modify   method()
+ */
 package com.itdoc.springcloud.entities;
 
 import java.io.Serializable;
 
-
+/**
+ * @desc 员工实体类
+ * @author Wang Chinda
+ * @create 2018-06-12 11:30
+ */
 public class Dept implements Serializable {
     /**
      * 主键

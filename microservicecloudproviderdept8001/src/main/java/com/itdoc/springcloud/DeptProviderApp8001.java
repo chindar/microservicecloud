@@ -1,5 +1,5 @@
 /**
- * @filename: DeptProvider8001_App.java
+ * @filename: DeptProviderApp8001.java
  * @desc 8001服务启动类
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
