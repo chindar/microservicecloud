@@ -1,15 +1,8 @@
 package com.itdoc.springcloud.entities;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serializable;
 
 
-@NoArgsConstructor
-@Data
-@Accessors(chain = true)
 public class Dept implements Serializable {
     /**
      * 主键
@@ -24,7 +17,27 @@ public class Dept implements Serializable {
      */
     private String dbSource;
 
-    public Dept(String dName) {
+    public Long getDeptNo() {
+        return deptNo;
+    }
+
+    public void setDeptNo(Long deptNo) {
+        this.deptNo = deptNo;
+    }
+
+    public String getdName() {
+        return dName;
+    }
+
+    public void setdName(String dName) {
         this.dName = dName;
+    }
+
+    public String getDbSource() {
+        return dbSource;
+    }
+
+    public void setDbSource(String dbSource) {
+        this.dbSource = dbSource;
     }
 }
