@@ -1,6 +1,6 @@
 /**
  * @filename: DeptService.java
- * @desc 员工业务层
+ * @desc 部门业务层
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
  * @date: 2018-06-12 10:24
@@ -17,28 +17,28 @@ import com.itdoc.springcloud.entities.Dept;
 import java.util.List;
 
 /**
- * @desc 员工业务层
+ * @desc 部门业务层
  * @author Wang Chinda
  * @create 2018-06-12 10:24
  */
 public interface DeptService {
 
     /**
-     * 添加员工信息
+     * 添加部门信息
      * @param dept
      * @return
      */
     public boolean add(Dept dept);
 
     /**
-     * 根据id获取员工信息
+     * 根据id获取部门信息
      * @param id
      * @return
      */
     public Dept get(Long id);
 
     /**
-     * 获取全部员工信息
+     * 获取全部部门信息
      * @return
      */
     public List<Dept> list();

@@ -1,6 +1,6 @@
 /**
  * @filename: DeptDao.java
- * @desc 员工数据层接口
+ * @desc 部门数据层接口
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
  * @date: 2018-06-12 10:19
@@ -19,7 +19,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @desc 员工数据层接口
+ * @desc 部门数据层接口
  * @author Wang Chinda
  * @create 2018-06-12 10:19
  */
@@ -27,21 +27,21 @@ import java.util.List;
 public interface DeptDao {
 
     /**
-     * 添加员工信息
+     * 添加部门信息
      * @param dept
      * @return
      */
     public boolean addDept(Dept dept);
 
     /**
-     * 根据id查询员工信息
+     * 根据id查询部门信息
      * @param id
      * @return
      */
     public Dept findById(@Param("deptNo") Long id);
 
     /**
-     * 查询全部员工信息
+     * 查询全部部门信息
      * @return
      */
     public List<Dept> findAll();

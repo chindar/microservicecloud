@@ -1,6 +1,6 @@
 /**
  * @filename: Dept.java
- * @desc 员工实体类
+ * @desc 部门实体类
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
  * @date: 2018-06-12 11:30
@@ -15,7 +15,7 @@ package com.itdoc.springcloud.entities;
 import java.io.Serializable;
 
 /**
- * @desc 员工实体类
+ * @desc 部门实体类
  * @author Wang Chinda
  * @create 2018-06-12 11:30
  */

@@ -1,6 +1,6 @@
 /**
  * @filename: DeptServiceImpl.java
- * @desc 员工业务层实现
+ * @desc 部门业务层实现
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
  * @date: 2018-06-12 10:27
@@ -22,7 +22,7 @@ import java.util.List;
 
 /**
  * @author Wang Chinda
- * @desc 员工业务层实现
+ * @desc 部门业务层实现
  * @create 2018-06-12 10:27
  */
 @Service
@@ -32,7 +32,7 @@ public class DeptServiceImpl implements DeptService {
     private DeptDao deptDao;
 
     /**
-     * 添加员工信息
+     * 添加部门信息
      *
      * @param dept
      * @return
@@ -43,7 +43,7 @@ public class DeptServiceImpl implements DeptService {
     }
 
     /**
-     * 根据id获取员工信息
+     * 根据id获取部门信息
      *
      * @param id
      * @return
@@ -54,7 +54,7 @@ public class DeptServiceImpl implements DeptService {
     }
 
     /**
-     * 获取全部员工信息
+     * 获取全部部门信息
      *
      * @return
      */

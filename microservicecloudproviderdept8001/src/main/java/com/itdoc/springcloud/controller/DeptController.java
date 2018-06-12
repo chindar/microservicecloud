@@ -1,6 +1,6 @@
 /**
  * @filename: DeptController.java
- * @desc 员工控制层
+ * @desc 部门控制层
  * @author: Wang Chinda
  * @blog http://www.cnblogs.com/goodcheap
  * @date: 2018-06-12 10:30
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @desc 员工控制层
+ * @desc 部门控制层
  * @author Wang Chinda
  * @create 2018-06-12 10:30
  */
@@ -32,7 +32,7 @@ public class DeptController {
     private DeptService deptService;
 
     /**
-     * 添加员工信息
+     * 添加部门信息
      * @param dept
      * @return
      */
@@ -42,7 +42,7 @@ public class DeptController {
     }
 
     /**
-     * 根据id获取员工信息
+     * 根据id获取部门信息
      * @param id
      * @return
      */
@@ -52,7 +52,7 @@ public class DeptController {
     }
 
     /**
-     * 获取全部员工信息
+     * 获取全部部门信息
      * @return
      */
     @GetMapping("list")
