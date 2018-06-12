@@ -9,46 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-provider-dept-8001</artifactId>
-    <packaging>pom</packaging>
-
-    <name>microservicecloud-provider-dept-8001</name>
+    <artifactId>microservicecloud-consumer-dept-80</artifactId>
+    <description>部门微服务消费者</description>
 
     <dependencies>
-        <!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
-        <dependency>
+        <dependency><!-- 自己定义的api -->
             <groupId>com.itdoc.springcloud</groupId>
             <artifactId>microservicecloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
@@ -60,5 +33,6 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>
