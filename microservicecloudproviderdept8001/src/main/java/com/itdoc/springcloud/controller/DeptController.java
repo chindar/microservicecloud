@@ -65,6 +65,10 @@ public class DeptController {
         return deptService.list();
     }
 
+    /**
+     * 获取服务发现列表
+     * @return
+     */
     @GetMapping("discovery")
     public DiscoveryClient getDiscoveryClient() {
         List<String> serviceList = discoveryClient.getServices();
