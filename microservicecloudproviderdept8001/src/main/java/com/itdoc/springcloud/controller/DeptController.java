@@ -15,6 +15,8 @@ package com.itdoc.springcloud.controller;
 import com.itdoc.springcloud.entities.Dept;
 import com.itdoc.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +32,9 @@ public class DeptController {
 
     @Autowired
     private DeptService deptService;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     /**
      * 添加部门信息
@@ -58,5 +63,21 @@ public class DeptController {
     @GetMapping("list")
     public List<Dept> list() {
         return deptService.list();
+    }
+
+    @GetMapping("discovery")
+    public DiscoveryClient getDiscoveryClient() {
+        List<String> serviceList = discoveryClient.getServices();
+        System.out.println("============" + serviceList);
+
+
+        List<ServiceInstance> serviceInstanceList = discoveryClient.getInstances("MICROSERVICECLOUD-DEPT");
+
+        for (ServiceInstance serviceInstance : serviceInstanceList) {
+            System.out.println("微服务名称: " + serviceInstance.getServiceId() + "\nHost: " + serviceInstance.getHost()
+                    + "\nPort: " + serviceInstance.getPort() + "\nUri: " + serviceInstance.getUri()
+                    + "\nMetadata: " + serviceInstance.getMetadata());
+        }
+        return this.discoveryClient;
     }
 }
