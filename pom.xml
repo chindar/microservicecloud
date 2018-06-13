@@ -72,6 +72,7 @@
 
     <build>
         <finalName>microservicecloud</finalName>
+        <!-- 过滤项目中的src/main/resources目录 -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -79,6 +80,7 @@
             </resource>
         </resources>
         <plugins>
+            <!-- 通过此插件在上面配置的目录中检索以$开头结尾的配置 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -95,6 +97,7 @@
         <module>microservicecloudapi</module>
         <module>microservicecloudproviderdept8001</module>
         <module>microservicecloudconsumerdept80</module>
+        <module>microservicecloudeureka7001</module>
     </modules>
 
 </project>
