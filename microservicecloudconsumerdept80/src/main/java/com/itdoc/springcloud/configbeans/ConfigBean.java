@@ -12,6 +12,7 @@
  */
 package com.itdoc.springcloud.configbeans;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
@@ -29,6 +30,7 @@ public class ConfigBean {
      * @return
      */
     @Bean
+    @LoadBalanced
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
