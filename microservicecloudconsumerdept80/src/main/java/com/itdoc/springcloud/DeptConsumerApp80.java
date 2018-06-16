@@ -12,9 +12,11 @@
  */
 package com.itdoc.springcloud;
 
+import com.itdoc.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @desc 部门微服务消费者启动类
@@ -23,6 +25,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+@RibbonClient(name = "MICROSERVICECLOUD-DEPT", configuration = MySelfRule.class)
 public class DeptConsumerApp80 {
     public static void main(String[] args) {
         SpringApplication.run(DeptConsumerApp80.class, args);
