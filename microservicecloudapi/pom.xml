@@ -13,6 +13,11 @@
 
     <!-- 当前Module需要用到的jar包，按自己需求添加，如果父类已经包含了，可以不用写版本号 -->
     <dependencies>
-
+        <!-- Feign相关 START -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        <!-- Feign相关 START -->
     </dependencies>
 </project>
