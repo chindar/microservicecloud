@@ -12,9 +12,11 @@
  */
 package com.itdoc.springcloud.configbeans;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -33,5 +35,14 @@ public class ConfigBean {
     @LoadBalanced
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
+    }
+
+    /**
+     * 修改默认轮询算法, 获取随机算法
+     * @return
+     */
+    @Bean
+    public IRule getMyRule() {
+        return new RandomRule();
     }
 }
