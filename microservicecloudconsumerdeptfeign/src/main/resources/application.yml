@@ -1,6 +1,11 @@
 server:
   port: 80
 
+# 开启服务熔断(降级)机制
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     register-with-eureka: false
