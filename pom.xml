@@ -104,6 +104,7 @@
         <module>microservicecloudproviderdept8003</module>
         <module>microservicecloudconsumerdeptfeign</module>
         <module>microservicecloudproviderdepthystrix8001</module>
+        <module>microservicecloudconsumerhystrixdashboard</module>
     </modules>
 
 </project>
